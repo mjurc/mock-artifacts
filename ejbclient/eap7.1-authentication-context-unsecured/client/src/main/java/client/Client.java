@@ -37,6 +37,7 @@ public class Client {
     public static Properties getCtxProperties() {
         Properties props = new Properties();
         props.put(Context.INITIAL_CONTEXT_FACTORY, WildFlyInitialContextFactory.class.getName());
+        props.put(Context.PROVIDER_URL, "remote+http://127.0.0.1:8080");
         return props;
     }
 
